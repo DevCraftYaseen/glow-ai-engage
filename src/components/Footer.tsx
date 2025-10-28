@@ -2,9 +2,9 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+    <footer className="border-t border-border py-16">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-glow bg-clip-text text-transparent mb-4">
               AI SaaS
@@ -15,39 +15,39 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">API</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
+            <h4 className="font-semibold mb-6 text-lg">Product</h4>
+            <ul className="space-y-3 text-muted-foreground">
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Features</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Pricing</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">API</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Documentation</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+            <h4 className="font-semibold mb-6 text-lg">Company</h4>
+            <ul className="space-y-3 text-muted-foreground">
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">About</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Blog</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Careers</a></li>
+              <li><a href="#" className="hover:text-primary hover:translate-x-1 inline-block transition-all duration-300">Contact</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
-            <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="w-5 h-5" />
+            <h4 className="font-semibold mb-6 text-lg">Connect</h4>
+            <div className="flex space-x-6">
+              <a href="#" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
+                <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="w-5 h-5" />
+              <a href="#" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
+                <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="#" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
+                <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="w-5 h-5" />
+              <a href="#" className="text-muted-foreground hover:text-primary hover:scale-125 transition-all duration-300">
+                <Mail className="w-6 h-6" />
               </a>
             </div>
           </div>

@@ -156,16 +156,17 @@ const ChatInterface = () => {
             <div
               key={index}
               className={`flex ${message.role === "user" ? "justify-end" : "justify-start"} animate-fade-in`}
+              style={{ animationDelay: `${index * 50}ms` }}
             >
               <div
-                className={`max-w-[80%] rounded-2xl p-4 ${
+                className={`max-w-[80%] rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] ${
                   message.role === "user"
-                    ? "bg-gradient-glow text-white"
-                    : "backdrop-blur-lg bg-[var(--glass-bg)] border border-[var(--glass-border)]"
+                    ? "bg-gradient-glow text-white shadow-lg"
+                    : "backdrop-blur-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] shadow-md"
                 }`}
               >
-                <p className="whitespace-pre-wrap">{message.content}</p>
-                <span className="text-xs opacity-70 mt-2 block">
+                <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
+                <span className="text-xs opacity-70 mt-3 block">
                   {new Date(message.timestamp).toLocaleTimeString()}
                 </span>
               </div>
@@ -184,21 +185,21 @@ const ChatInterface = () => {
       </div>
 
       {/* Input */}
-      <div className="border-t border-border backdrop-blur-lg bg-background/80 p-4">
+      <div className="border-t border-border backdrop-blur-lg bg-background/80 p-6">
         <div className="container mx-auto max-w-4xl">
-          <div className="flex gap-2">
+          <div className="flex gap-4">
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
               disabled={isLoading}
-              className="flex-1 bg-input border-border"
+              className="flex-1 bg-input border-border h-12 px-6 text-base focus:ring-2 focus:ring-primary transition-all duration-300"
             />
             <Button
               onClick={sendMessage}
               disabled={isLoading || !input.trim()}
-              className="bg-gradient-glow hover:opacity-90 transition-opacity"
+              className="bg-gradient-glow hover:opacity-90 hover:scale-105 transition-all duration-300 h-12 px-6"
             >
               {isLoading ? (
                 <Loader2 className="w-5 h-5 animate-spin" />
